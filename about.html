@@ -1,0 +1,247 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>About Me</title>
+    <style>
+        p{
+            margin: 0
+        }
+
+        body{
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            background-color: #040D12;
+        }
+
+        body::-webkit-scrollbar{
+            display:none;
+        }
+
+        .header-nav{
+            display: flex;
+            padding: 20px 70px 20px 70px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #040D12;
+            width: 80%;
+            color: #93B1A6;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            border-bottom: #93B1A6 solid 3px;
+        }
+
+        .portfolio-title{
+            position: relative;
+        }
+
+        .portfolio-title::before{
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: #040D12;
+            animation: showDown 1s ease forwards;
+            animation-delay: 1s;
+
+        }
+
+        .header-menus{
+            width: 500px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-menus a{
+            text-decoration: none;
+            color: #93B1A6;
+            border: #040D12 solid 3px;
+            padding: 10px 20px;
+            transition: all 0.45s;
+        }
+
+        .header-menus :nth-child(1):hover{
+            color: #183D3D;
+            border: #183D3D solid 3px;
+            border-radius: 20px 0px 20px 0px;
+        }
+
+        .header-menus :nth-child(2){
+            color: #ffffff;
+            border: #ffffff solid 3px;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .header-menus :nth-child(3):hover{
+            color: #183D3D;
+            border: #183D3D solid 3px;
+            border-radius: 0px 20px 0px 20px;
+        }
+
+        .middle-content{
+            color: white;
+            text-align: justify;
+            text-align-last: center;
+            width:800px;
+            font-size: 20px;
+        }
+
+        .grid-for-videos{
+            display: grid;
+            grid-template-columns: 500px 500px;
+            row-gap: 100px;
+            column-gap: 50px;
+            margin-top: 60px;
+            margin-bottom: 200px;
+        }
+
+        .grid-for-videos iframe{
+            width: 500px;
+            height: 294px;
+        }
+
+        /* KEYFRAMES */
+
+        @keyframes showDown{
+            100%{
+                height: 0;
+            }
+        }
+
+        /* MEDIA QUERIES FOR PHONES */
+
+        @media (max-width: 1280px) {
+        
+            body::-webkit-scrollbar{
+                display:block;
+            }
+
+            .header-nav{
+                display: flex;
+
+                padding: 15px 15px 15px 15px;
+                width: 350px;
+                height: 60px;
+                color: #93B1A6;
+                background-color: #040D12;
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: 3px;
+                border-bottom: #93B1A6 solid 3px;
+            }
+
+            .portfolio-title{
+                display: none;
+            }
+
+            .middle-content{
+                width: 360px;
+            }
+
+            .grid-for-videos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            video{
+                width: 300px;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .grid-for-videos iframe{
+            width: 300px;
+            height: 176px;
+        }
+        }
+
+        @media (min-width: 300px) and (max-width: 413px) {
+            body::-webkit-scrollbar{
+                display:block;
+            }
+
+            .header-nav{
+                display: flex;
+
+                padding: 15px 15px 15px 15px;
+                width: 300px;
+                height: 60px;
+                color: #93B1A6;
+                background-color: #040D12;
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: 3px;
+                border-bottom: #93B1A6 solid 3px;
+            }
+
+            .portfolio-title{
+                display: none;
+            }
+
+            .middle-content{
+                width: 290px;
+            }
+            
+            video{
+                margin-top: 0px;
+            }
+
+            .grid-for-videos iframe{
+            width: 280px;
+            height: 165px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <nav class="header-nav">
+            <div class="portfolio-title">
+                <p>Portfolio</p>
+            </div>
+            <div class="header-menus">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="socials.html">Socials</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="middle" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="middle-content">
+            <h1 style="color: #93B1A6;">About Me</h1>
+            <p>I am a 19-year-old teenager, and I am an aspiring programmer. My hobby is mainly editing 
+                random videos (a lot of them are AMVs or Anime Music Videos) and practicing web development. I am quite flexible in CapCut, After Effects, Canva, Photoshop, HTML, and CSS! 
+                I still don't know much about JavaScript and it is a major obstacle I have to overcome
+                
+                <br><br>Aside from web development, I also want to learn developing
+                programs, apps, and video games. I have a huge interest and likes on video games. I play everyday since I was a kid and this is what made me interested
+                in programming. I was fascinated by how programs and video games work behind the appearance that hides all the codes and hidden techniques used by the developers
+                <br><br>
+                Below are some of the videos I edited myself for fun
+                
+            </p>
+        </div>
+
+        <div class="grid-for-videos">
+            <iframe src="https://www.youtube.com/embed/P3YgJjs0UQ0?si=r4wjHe5JKMv00VpM" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="https://www.youtube.com/embed/vj2Kh6004ZU?si=QnZtoU1v0FtHkZxw" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="https://www.youtube.com/embed/sK0EMgDf3TU?si=xr62R7WPo0Z1bVPI" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="https://www.youtube.com/embed/JssyKUKAges?si=0nCpLnkUuCAPfxfd" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="https://www.youtube.com/embed/2pF6ObEAlXc?si=PPfrMSHtXRiVywHR" allowfullscreen="allowfullscreen"></iframe>
+            <iframe src="https://www.youtube.com/embed/IAw0GLrHexw?si=x0J_gzI7lgO4BNRJ" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
