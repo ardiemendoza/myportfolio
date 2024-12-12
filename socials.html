@@ -168,6 +168,47 @@
             cursor: pointer;
         }
 
+        .container-phone{
+            font-weight: 600;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 170px;
+        }
+
+        .reach{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-for-contacts{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            border: white solid 2px;
+        }
+        .container-mail{
+            font-weight: 600;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px;
+            margin-left: 50px;
+        }
+
+        .mail-icon{
+            font-size: 23px;
+        }
+
+        .phone-icon{
+            font-size: 23px;
+        }
+
         /* KEYFRAMES */
 
         @keyframes showDown{
@@ -224,7 +265,27 @@
                 font-weight: 600;
                 letter-spacing: 3px;
                 border-bottom: #93B1A6 solid 3px;
-        }
+            }
+
+            .container{
+                height: 300px;
+            }
+
+            .container-for-contacts{
+                display: block;
+                width: 300px;
+                border-style: none;
+            }
+
+            .container-mail,
+            .container-phone{
+                width: 280px;
+                font-size: 10px;
+                margin-left: 0px;
+                display: flex;
+                justify-content: center; 
+            }
+            
     }
     </style>
 </head>
@@ -252,5 +313,20 @@
             <div class="instagram-container">
                 <a href="https://www.instagram.com/rdmendoza_/#" target="_blank" class="instagram"><i class='bx bxl-instagram-alt'></i></a>
             </div>
+        </div>
+    </div>
+
+    <div class="reach">
+        <div class="container-for-contacts">
+            <div class="container-phone">
+                <div class="phone-icon"><i class='bx bx-phone'></i></div>
+                <p>+63 920 582 4430</p>
+            </div>
+            <div class="container-mail">
+                <div class="mail-icon"><i class='bx bx-envelope'></i></div>
+                <p>ardiemendoza2005@gmail.com</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
