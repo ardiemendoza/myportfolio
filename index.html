@@ -111,6 +111,92 @@
             z-index: -100;  
         }
 
+        .sdg-section{
+            p {
+                color: white;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .sdg-section2{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            height: 300px;
+        }
+
+        .container-sdg-section3{
+            p {
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container2-sdg-section3{
+            p {
+                color: white;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sdg-photo{
+            width: 200px;
+            transition: all 0.45s;
+            cursor: pointer;
+            border-radius: 20px 20px 20px 20px;
+            padding: 20px;
+        }
+
+        .sdg-photo:hover{
+            border-width: 5px;
+            border-style: solid;
+            border-color: white;
+            
+        }
+
+        .sdg-others{
+            width: 800px;
+            transition: all 0.45s;
+            cursor: pointer;
+            border-radius: 20px 20px 20px 20px;
+            padding: 20px;
+        }
+
+        .sdg-section4 {
+            p {
+                color:white;
+                font-size: 20px;
+                text-align: justify;
+                margin-right: 30px;
+            }
+
+            .philippine-islands{
+                width: 600px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+
+            display: flex;
+            padding: 0px 100px 0px 100px;
+            margin-bottom: 200px;
+        }
+
         /* KEYFRAMES */
 
         @keyframes showDown{
@@ -160,10 +246,12 @@
             }
 
             .middle{
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
                 padding-left: 30px;
                 padding-right: 30px;
-            }
-            
+            } 
         }
 
         @media (min-width: 300px) and (max-width: 413px) {
@@ -173,7 +261,6 @@
 
             .header-nav{
                 display: flex;
-
                 padding: 15px 15px 15px 15px;
                 width: 300px;
                 height: 60px;
@@ -184,10 +271,44 @@
                 letter-spacing: 3px;
                 border-bottom: #93B1A6 solid 3px;
         }
+
+        .sdg-section{
+            p{
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+
+        .sdg-section4 {
+            display: block;
+            p {
+                width: 360px;
+            }
+        }
+        
+        .philippine-islands{
+            width: 10px;
+            object-fit: contain;
+        }
+
+        .sdg-others{
+            width: 360px;
+        }
+
+        .sdg-photo {
+            width: 100px;
+        }
+
+        .sdg-section4 {
+            margin: 0px;
+            padding: 5px;
+        }
     }
     </style>
 </head>
 <body>
+
+    <!-- This is the code for the nav bar -->
     <div style="display: flex; justify-content: center;">
         <nav class="header-nav">
             <div class="portfolio-title">
@@ -212,5 +333,35 @@
     </section>
 
     <img class="ardie-faded" src="Photos/ardie-faded.png">
+
+    <div class="sdg-section">
+        <p>The SDG that I have chosen is LIFE BELOW WATER</p>
+    </div>
+    <div class="sdg-section2">
+        <img class="sdg-photo" src="Photos/sdg-14-300x300.png" alt="sdg">
+    </div>
+
+    <div class="sdg-section3">
+        <div class="container-sdg-section3">
+            <p>Among all the other SDGs, why did I chose the Life Below Water?</p>
+        </div>
+        <div class="container2-sdg-section3">
+            <img class="sdg-others" src="Photos/sdgs.png" alt="other-sdgs">
+        </div>
+    </div>
+
+    <div class="sdg-section4">
+        <p>I personally think that attention for life below water 
+            is prioritized less than other SDGs. We have multiple reasons 
+            to prioritize the waters as much as any other SDGs. The waters cover 
+            the Earth's surface for about 70%, and they provide key resources like food and 
+            oxygen, and they play an important role in regulating the Earth's climate. Philippines 
+            is also one of the few countries that is called an archipelago since we are surrounded by 
+            water and our waters are one of the greatest tourist attractions and also one of the most 
+            valuable since Philippines is one big island by itself. I chose this because I personally 
+            think that this SDG is not very actively picked by people as much as the other SDG.
+        </p>
+
+    </div>
 </body>
 </html>
